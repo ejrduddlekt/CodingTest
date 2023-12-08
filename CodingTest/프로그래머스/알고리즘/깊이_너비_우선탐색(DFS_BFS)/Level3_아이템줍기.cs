@@ -185,28 +185,28 @@ public class Solution
     }
 
 
-    class Program
-    {
-        static void Main()
-        {
-            Solution solution = new Solution();
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        Solution solution = new Solution();
 
-            int[,] rectangle = new int[,]
-            {
-            {1, 1, 7, 4},
-            {3, 2, 5, 5},
-            {4, 3, 6, 9},
-            {2, 6, 8, 8}
-            };
+    //        int[,] rectangle = new int[,]
+    //        {
+    //        {1, 1, 7, 4},
+    //        {3, 2, 5, 5},
+    //        {4, 3, 6, 9},
+    //        {2, 6, 8, 8}
+    //        };
 
-            int characterX = 1;
-            int characterY = 3;
-            int itemX = 5;
-            int itemY = 9;
+    //        int characterX = 1;
+    //        int characterY = 3;
+    //        int itemX = 5;
+    //        int itemY = 9;
 
-            int result = solution.solution(rectangle, characterX, characterY, itemX, itemY);
+    //        int result = solution.solution(rectangle, characterX, characterY, itemX, itemY);
 
-            Console.WriteLine($"Result: {result}");
-        }
-    }
+    //        Console.WriteLine($"Result: {result}");
+    //    }
+    //}
 }
