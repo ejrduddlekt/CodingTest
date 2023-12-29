@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="알고리즘\깊이_너비_우선탐색%28DFS_BFS%29\Level3_아이템줍기.cs" />
+    <Compile Include="알고리즘\깊이_너비_우선탐색%28DFS_BFS%29\Level2_게임 맵 최단거리.cs" />
     <Compile Include="알고리즘\스택_큐\Level2_다리를 지나는 트럭.cs" />
     <Compile Include="알고리즘\스택_큐\Level2_프로세스.cs" />
     <Compile Include="알고리즘\해시\Level1_완주하지못한선수.cs" />
