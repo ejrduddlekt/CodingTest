@@ -42,6 +42,7 @@
     <Compile Include="알고리즘\스택_큐\Level2_프로세스.cs" />
     <Compile Include="알고리즘\완전탐색\Level1_모의고사.cs" />
     <Compile Include="알고리즘\완전탐색\Level1_최소직사각형.cs" />
+    <Compile Include="알고리즘\완전탐색\Level2_소수찾기.cs" />
     <Compile Include="알고리즘\해시\Level1_완주하지못한선수.cs" />
     <Compile Include="알고리즘\해시\Level2_의상.cs" />
     <Compile Include="알고리즘\해시\Level3_베스트앨범.cs" />

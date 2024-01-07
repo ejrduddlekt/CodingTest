@@ -45,17 +45,17 @@ class Level1_모의고사
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        Level1_모의고사 solution = new Level1_모의고사();
+//class Program
+//{
+//    static void Main()
+//    {
+//        Level1_모의고사 solution = new Level1_모의고사();
 
-        int[] participant = new int[] { 1, 2, 3, 4, 5 };
+//        int[] participant = new int[] { 1, 2, 3, 4, 5 };
 
-        int[] result = solution.solution(participant);
+//        int[] result = solution.solution(participant);
 
-        Console.WriteLine($"Result: {result}");
-    }
-}
+//        Console.WriteLine($"Result: {result}");
+//    }
+//}
 
