@@ -130,20 +130,20 @@ namespace 프로그래머스.알고리즘.깊이_너비_우선탐색_DFS_BFS_
         }
     }
 
-    class Program
-    {
-        static void Main()
-        {
-            Solution solution = new Solution();
+    //class program
+    //{
+    //    static void main()
+    //    {
+    //        solution solution = new solution();
 
-            int[,] rectangle = new int[,]
-            {
-            {1},
-            };
+    //        int[,] rectangle = new int[,]
+    //        {
+    //        {1},
+    //        };
 
-            int result = solution.solution(rectangle);
+    //        int result = solution.solution(rectangle);
 
-            Console.WriteLine($"Result: {result}");
-        }
-    }
+    //        console.writeline($"result: {result}");
+    //    }
+    //}
 }
