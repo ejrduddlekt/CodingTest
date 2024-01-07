@@ -14,7 +14,8 @@ public class Level1_최소직사각형
         int[] horizontal = new int[sizes.GetLength(0)];
         int[] vertical = new int[sizes.GetLength(0)];
 
-
+        int h = sizes.GetLength(0);
+        int v = sizes.GetLength(1);
         for (int i = 0; i < sizes.GetLength(0); i++)
         {
             int[] tempArray = { sizes[i, 0], sizes[i, 1] };
