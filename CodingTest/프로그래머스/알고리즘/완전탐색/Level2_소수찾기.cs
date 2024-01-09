@@ -68,16 +68,16 @@ internal class Level2_소수찾기
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        Level2_소수찾기 solution = new Level2_소수찾기();
+//class Program
+//{
+//    static void Main()
+//    {
+//        Level2_소수찾기 solution = new Level2_소수찾기();
 
-        string participant = "111";
+//        string participant = "111";
 
-        int result = solution.solution(participant);
+//        int result = solution.solution(participant);
 
-        Console.WriteLine($"Result: {result}");
-    }
-}
+//        Console.WriteLine($"Result: {result}");
+//    }
+//}
