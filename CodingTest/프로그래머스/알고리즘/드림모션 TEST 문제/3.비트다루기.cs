@@ -15,12 +15,12 @@ namespace Test3
 	 */
     class Program
     {
-        static void Main(string[] args)
-        {
-            int bits = MakeBitRange(5, 10);
+        //static void Main(string[] args)
+        //{
+        //    int bits = MakeBitRange(5, 10);
 
-            Print(bits);
-        }
+        //    Print(bits);
+        //}
 
         #region Stub
         static void Print(int bits)

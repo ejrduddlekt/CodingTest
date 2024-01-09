@@ -86,22 +86,86 @@ namespace Test4
         public const int TETRIS_SIZE_X = 10;        // 테트리스 폭
         public const int TETRIS_SIZE_Y = 20;        // 테트리스 높이. Y값이 작을수록 낮은 곳. 가장 높은 위치는 Y=19입니다.
 
+        public bool[,] tetrisBlock = new bool[20, 10];
+
         public bool Get(int x, int y)
         {
             // X, Y 위치에 블록이 있으면 true 리턴
-            throw new NotImplementedException();
+            if (tetrisBlock[y, x])
+                return true;
+            else
+                return false;
         }
 
         public void Set(int x, int y)
         {
             // X, Y 위치에 블록을 배치
-            throw new NotImplementedException();
+            tetrisBlock[y, x] = true;
         }
 
         public void CheckCompleteLine()
         {
+            bool[,] bools = new bool[20, 10];
             // 완성된 줄을 없애고 윗 부분의 블록들을 한줄씩 없애는 기능을 구현
-            throw new NotImplementedException();
+            for (int y = 0; y < TetrisState.TETRIS_SIZE_Y; y++)
+                checkLineX(y);
+        }
+
+        public void checkLineX(int CheckLineY)
+        {
+            bool checkLine = true;
+
+            for (int x = 0; x < TetrisState.TETRIS_SIZE_X; x++)
+                checkLine = checkLine && tetrisBlock[CheckLineY, x];
+            
+            if (checkLine)
+                removeLine(CheckLineY);
+        }
+
+        public void removeLine(int removeLineY)
+        {
+            for(int y = removeLineY; y < TETRIS_SIZE_Y - 1; y++)
+            {
+                for(int x = 0; x < TETRIS_SIZE_X; x++)
+                    tetrisBlock[y, x] = tetrisBlock[y + 1, x];
+            }
+
+            for (int x = 0; x < TETRIS_SIZE_X; x++)
+                tetrisBlock[TETRIS_SIZE_Y-1, x] = false;
+
+            checkLineX(removeLineY);
         }
     }
 }
+
+#region for문 횟수를 줄일 시
+/* 
+ public void CheckCompleteLine()
+        {
+            bool[,] bools = new bool[20,10];
+            int checkCount = 0;
+            // 완성된 줄을 없애고 윗 부분의 블록들을 한줄씩 없애는 기능을 구현
+            for (int y = 0; y < TetrisState.TETRIS_SIZE_Y; y++)
+            {
+                bool checkLine = true;
+                bool[] xLine = new bool[10];
+                for (int x = 0; x < TetrisState.TETRIS_SIZE_X; x++)
+                {
+                    xLine[x] = tetrisBlock[y, x];
+                    checkLine = checkLine && tetrisBlock[y, x];
+                }
+
+                if (checkLine)
+                    checkCount++;
+                else
+                {
+                    for(int x = 0; x < TetrisState.TETRIS_SIZE_X; x++)
+                    {
+                        bools[y - checkCount, x] = xLine[x];
+                    }
+                }
+            }
+            tetrisBlock = bools;
+        }
+ */
+#endregion
