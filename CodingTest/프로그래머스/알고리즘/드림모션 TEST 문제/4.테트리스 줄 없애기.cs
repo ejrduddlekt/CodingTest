@@ -16,16 +16,16 @@ namespace Test4
 	 */
     class Program
     {
-        static void Main(string[] args)
-        {
-            TetrisState tetris = CreateTestTetris();
+        //static void Main(string[] args)
+        //{
+        //    TetrisState tetris = CreateTestTetris();
 
-            PrintTetris(tetris);
+        //    PrintTetris(tetris);
 
-            tetris.CheckCompleteLine();
+        //    tetris.CheckCompleteLine();
 
-            PrintTetris(tetris);
-        }
+        //    PrintTetris(tetris);
+        //}
 
         #region Stub
         static void PrintTetris(TetrisState tetris)
