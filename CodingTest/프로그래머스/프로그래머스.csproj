@@ -52,6 +52,7 @@
     <Compile Include="알고리즘\해시\Level1_완주하지못한선수.cs" />
     <Compile Include="알고리즘\해시\Level2_의상.cs" />
     <Compile Include="알고리즘\해시\Level3_베스트앨범.cs" />
+    <Compile Include="코딩인터뷰\1_중복문자열.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
